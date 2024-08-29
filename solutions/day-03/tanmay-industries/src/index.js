@@ -1,6 +1,7 @@
 // index.js
 import React from 'react'
 import ReactDOM from 'react-dom'
+import tanmay from './images/tanmay.jpg'
 // To get the root element from the HTML document
 
 // JSX element, header
@@ -12,6 +13,12 @@ const author = {
   lastName: 'Ghosh',
 }
 const date = 'Oct 2, 2020'
+
+const user = (
+  <div>
+    <img src={tanmay} alt='asabeneh image' />
+  </div>
+)
 
 // JSX element, header
 const header = (
@@ -65,6 +72,7 @@ const main = (
       <ul>{techsFormatted}</ul>
       {result}
       {personAge}
+      {user}
     </div>
   </main>
 )
